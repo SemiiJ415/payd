@@ -21,49 +21,59 @@
     </header>
     <main class="main">
         <div class="container">
-            <div id="date"></div>
-            <div class="pay-input row pb-5 text-center">
-                <div class="input-text">
-                    How much did you make today?
+            <section class="section mb-5 ">
+                <div class="pay-input row pb-3 text-center">
+                    <div class="input-text">
+                        How much did you make today?
+                    </div>
+                    <div class="input pt-3 ">
+                        <input 
+                            type="number"
+                            placeholder="0.00" 
+                            step="0.01" 
+                            min="0" 
+                            max="800"
+                            id="payInput"
+                            class="input-box text-center"
+                            required
+                        >
+                    </div>
                 </div>
-                <div class="input pt-3 ">
-                    <input 
-                        type="number"
-                        placeholder="0.00" 
-                        step="0.01" 
-                        min="0" 
-                        max="800"
-                        id="payInput"
-                        class="input-box text-center"
+                <div class="pay-type text-center">
+                    <select 
+                        name="paytype" 
+                        id="payType"
                         required
                     >
+                        <option value="" class="option">--Please choose a pay type--</option>
+                        <option value="cash" class="option">Cash</option>
+                        <option value="credit" class="option">Credit Card</option>
+                        
+                    </select>
                 </div>
-            </div>
-            <div class="pay-type text-center pt-3">
-                <select 
-                    name="paytype" 
-                    id="payType"
-                    required
-                >
-                    <option value="" class="option">--Please choose a pay type--</option>
-                    <option value="cash" class="option">Cash</option>
-                    <option value="credit" class="option">Credit Card</option>
-                    
-                </select>
-            </div>
-            <div class="add-btn text-center pt-3 pb-2">
-                <input 
-                    type="submit" 
-                    value="Add to Bank"
-                    id="submit"
-                >
-            </div>
-            <div class="bank-div">
-                <p class="message" id="message"></p>
-                <p class="bank" id="bank">Amount in your Bank:</p>
-                <p class="bank-amount text-center" id="bankAmount"></p>
-            </div>
-
+                <div class="add-btn text-center pt-3 pb-2">
+                    <input 
+                        type="submit" 
+                        value="Add to Bank"
+                        id="submit"
+                    >
+                </div>
+                <div class="bank-div">
+                    <p class="message" id="message"></p>
+                    <p class="bank" id="bank">Amount in your Bank:</p>
+                    <p class="bank-amount text-center" id="bankAmount"></p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="bank-history">
+                    <h3 class="history-head">Transaction history:</h3>
+                    <div class="row">
+                        <div class="date col-4">Date</div>
+                        <div class="amount-added col-4">Amount</div>
+                        <div class="amount-type col-4">Paytype</div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     
