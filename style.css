@@ -1,14 +1,49 @@
 *{box-sizing: border-box;}
+
+.heading{
+    font-size: calc(34px + (36 - 34) * ((100vw - 300px) / (1600 - 300)));
+    margin-right: 50px;
+    font-family: "Anton", sans-serif;
+    color: white;
+}
 body{
-    background-color: #111;
-    color: aliceblue;
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    /* background-color: #111; */
+    background-image: linear-gradient(to bottom right, #092327, #0B5351, #111);
+    color: #90C2E7;
+    font-size: calc(24px + (26 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Dekko", cursive;
+    border: 1px solid;
+    height: 100vh;
 }
 
 main{
     margin: 20px auto;
     padding: 10px;
-    width: 30%;
-    height: 80%;
-    border: 2px solid wheat;
+    /* border: 2px solid wheat; */
+    /* background-color: #333; */
+}
+.pay-input{
+    display: flex;
+    /* border: 2px solid orange; */
+    padding: 0;
+}
+
+.input-box{
+    font-size: calc(54px + (56 - 54) * ((100vw - 300px) / (1600 - 300)));
+    border-radius: 20px;
+
+}
+
+.input-text, .input, .bank-amount{
+    /* border: 1px solid blue; */
+    font-size: calc(34px + (36 - 34) * ((100vw - 300px) / (1600 - 300)));
+    border-radius: 20px;
+
+}
+.input-text{
+    text-shadow: 1px 2px 2px black;
+}
+
+.option{
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
